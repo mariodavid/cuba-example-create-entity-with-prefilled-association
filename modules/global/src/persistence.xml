@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             version="2.0">
+    <persistence-unit name="cuba-example-create-entity-with-prefilled-association"
+                      transaction-type="RESOURCE_LOCAL">
+        <class>com.company.cecewpa.entity.Customer</class>
+        <class>com.company.cecewpa.entity.ProductCategory</class>
+        <class>com.company.cecewpa.entity.CustomerProductCategoryEvaluation</class>
+        <class>com.company.cecewpa.entity.CustomerEvaluation</class>
+    </persistence-unit>
+</persistence>

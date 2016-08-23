@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.cecewpa.web.customerevaluation.CustomerEvaluationBrowse"
+        focusComponent="customerEvaluationsTable"
+        lookupComponent="customerEvaluationsTable"
+        messagesPack="com.company.cecewpa.web.customerevaluation">
+    <dsContext>
+        <collectionDatasource id="customerEvaluationsDs"
+                              class="com.company.cecewpa.entity.CustomerEvaluation"
+                              view="customerEvaluation-view">
+            <query>
+                <![CDATA[select e from cecewpa$CustomerEvaluation e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout expand="customerEvaluationsTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="customerEvaluationsTable"
+                datasource="customerEvaluationsDs">
+            <properties include=".*"/>
+        </filter>
+        <table id="customerEvaluationsTable"
+               width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="comment"/>
+            </columns>
+            <rows datasource="customerEvaluationsDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="customerEvaluationsTable.create"/>
+                <button id="editBtn"
+                        action="customerEvaluationsTable.edit"/>
+                <button id="removeBtn"
+                        action="customerEvaluationsTable.remove"/>
+            </buttonsPanel>
+        </table>
+    </layout>
+</window>

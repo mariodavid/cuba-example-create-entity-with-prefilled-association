@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<views xmlns="http://schemas.haulmont.com/cuba/view.xsd">
+    <view class="com.company.cecewpa.entity.CustomerProductCategoryEvaluation"
+          extends="_local"
+          name="customerProductCategoryEvaluation-view">
+        <property name="productCategory"
+                  view="_local"/>
+    </view>
+    <view class="com.company.cecewpa.entity.CustomerEvaluation"
+          extends="_local"
+          name="customerEvaluation-view">
+        <property name="productCategorieEvaluations"
+                  view="customerProductCategoryEvaluation-view"/>
+    </view>
+</views>

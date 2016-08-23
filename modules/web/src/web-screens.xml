@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="/screens.xml"/>
+    <screen id="cecewpa$ProductCategory.browse"
+            template="com/company/cecewpa/web/productcategory/product-category-browse.xml"/>
+    <screen id="cecewpa$ProductCategory.edit"
+            template="com/company/cecewpa/web/productcategory/product-category-edit.xml"/>
+    <screen id="cecewpa$Customer.browse"
+            template="com/company/cecewpa/web/customer/customer-browse.xml"/>
+    <screen id="cecewpa$Customer.edit"
+            template="com/company/cecewpa/web/customer/customer-edit.xml"/>
+    <screen id="cecewpa$CustomerEvaluation.browse"
+            template="com/company/cecewpa/web/customerevaluation/customer-evaluation-browse.xml"/>
+    <screen id="cecewpa$CustomerEvaluation.edit"
+            template="com/company/cecewpa/web/customerevaluation/customer-evaluation-edit.xml"/>
+</screen-config>
